@@ -1,0 +1,8 @@
+---
+- name: apache instalation
+  hosts: centos
+  tasks:
+   - name: instalation is begin right khow
+     yum:
+       name: httpd
+       state: latest
