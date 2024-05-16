@@ -1,0 +1,14 @@
+---
+ - name: Upgrade CentOS
+   hosts: centos
+   become: yes
+   tasks:
+    - name: Update package cache
+      ansible.builtin.yum:
+        name: '*'
+        state: latest
+      register: result
+
+    - name: Reboot the system if necessary
+      ansible.builtin.reboot:
+      when: result.changed
