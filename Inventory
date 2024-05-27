@@ -1,4 +1,6 @@
-[centos]
-SVR1 ansible_host=192.168.187.137 ansible_connection=ssh ansible_user=root
-SVR2 ansible_host=192.168.187.138 ansible_connection=ssh ansible_user=root
-SVR3 ansible_host=192.168.187.139 ansible_connection=ssh ansible_user=root
+[servers]
+Centos1 ansible_host=192.168.187.137 ansible_connection=ssh ansible_user=ahmedsahal
+Centos2 ansible_host=192.168.187.138 ansible_connection=ssh ansible_user=ahmedsahal
+Centos3 ansible_host=192.168.187.139 ansible_connection=ssh ansible_user=ahmedsahal
+Debian1 ansible_host=192.168.187.141 ansible_connection=ssh ansible_user=ahmedsahal
+
